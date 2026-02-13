@@ -13,8 +13,23 @@ import Booking from './components/Booking';
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
+    const watermarkStyle = {
+        position: 'fixed',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: 9999,
+        color: 'white',
+        fontSize: '2rem',
+        fontWeight: 'bold',
+        opacity: 0.15,
+        pointerEvents: 'none',
+        fontFamily: 'monospace'
+    };
+
     return (
         <main>
+            <div style={watermarkStyle}>Made by Juan</div>
             <Navbar />
             <Hero />
             <Cocktails />
