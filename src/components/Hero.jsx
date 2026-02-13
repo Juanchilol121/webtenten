@@ -64,7 +64,7 @@ const Hero = () => {
     return (
         <>
             <section id='hero' className='noisy'>
-                <h1 className='title'>MOJITO</h1>
+                <h1 className='title'>Ten Ten</h1>
 
                 <img src="/images/hero-left-leaf.png" alt="left-leaf" className='left-leaf' />
                 <img src="/images/hero-right-leaf.png" alt="right-leaf" className='right-leaf' />
@@ -72,15 +72,15 @@ const Hero = () => {
                 <div className='body'>
                     <div className='content'>
                         <div className='space-y-5 hidden md:block'>
-                            <p>Cool. Crips. Classic</p>
+                            <p>Cocktails, Tapas & Sea Vibes</p>
                             <p className='subtitle'>
-                                Sip the Spirit <br /> of Summer
+                                El lugar ideal para ver el atardecer <br /> en Benalmádena.
                             </p>
                         </div>
 
                         <div className='view-cocktails'>
-                            <p className='subtitle'>Every cocktail on our menu is a blend of premium ingredientes, creative flair, and timeless recipes - designed to delight your senses.</p>
-                            <a href="#cocktails">View Cocktails</a>
+                            <p className='subtitle'>Somos un Lounge Bar familiar especializado en coctelería de autor y ambiente relajado. Nuestra terraza es el lugar ideal para ver el atardecer en Benalmádena.</p>
+                            <a href="#cocktails">Ver la carta</a>
                         </div>
                     </div>
                 </div>

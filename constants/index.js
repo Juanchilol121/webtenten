@@ -1,73 +1,77 @@
 const navLinks = [
     {
         id: "cocktails",
-        title: "Cocktails",
+        title: "Carta",
     },
     {
         id: "about",
-        title: "About Us",
+        title: "Nosotros",
     },
     {
         id: "art",
-        title: "The Art",
+        title: "Galería",
+    },
+    {
+        id: "booking",
+        title: "Reserva",
     },
     {
         id: "contact",
-        title: "Contact",
+        title: "Contacto",
     },
 ];
 
 const cocktailLists = [
     {
-        name: "Chapel Hill Shiraz",
-        country: "AU",
-        detail: "Battle",
-        price: "$10",
+        name: "Ten Ten Sunset",
+        country: "ES",
+        detail: "Copa",
+        price: "12€",
     },
     {
-        name: "Caten Malbee",
-        country: "AU",
-        detail: "Battle",
-        price: "$49",
+        name: "Benalmádena Breeze",
+        country: "ES",
+        detail: "Copa",
+        price: "11€",
     },
     {
-        name: "Rhino Pale Ale",
-        country: "CA",
-        detail: "750 ml",
-        price: "$20",
+        name: "Mediterranean Mule",
+        country: "ES",
+        detail: "Copa",
+        price: "10€",
     },
     {
-        name: "Irish Guinness",
-        country: "IE",
-        detail: "600 ml",
-        price: "$29",
+        name: "Costa del Sol",
+        country: "ES",
+        detail: "Jarra",
+        price: "25€",
     },
 ];
 
 const mockTailLists = [
     {
-        name: "Tropical Bloom",
-        country: "US",
-        detail: "Battle",
-        price: "$10",
+        name: "Patatas Bravas 'Ten Ten'",
+        country: "ES",
+        detail: "Tapa",
+        price: "8€",
     },
     {
-        name: "Passionfruit Mint",
-        country: "US",
-        detail: "Battle",
-        price: "$49",
+        name: "Croquetas de Jamón Ibérico",
+        country: "ES",
+        detail: "Tapa",
+        price: "9€",
     },
     {
-        name: "Citrus Glow",
-        country: "CA",
-        detail: "750 ml",
-        price: "$20",
+        name: "Ensaladilla Rusa con Atún",
+        country: "ES",
+        detail: "Tapa",
+        price: "7€",
     },
     {
-        name: "Lavender Fizz",
-        country: "IE",
-        detail: "600 ml",
-        price: "$29",
+        name: "Gambas al Pil Pil",
+        country: "ES",
+        detail: "Tapa",
+        price: "12€",
     },
 ];
 
@@ -87,33 +91,33 @@ const profileLists = [
 ];
 
 const featureLists = [
-    "Perfectly balanced blends",
-    "Garnished to perfection",
-    "Ice-cold every time",
-    "Expertly shaken & stirred",
+    "Vistas al Mar",
+    "Terraza Chill-Out",
+    "Música en Vivo",
+    "Ambiente Familiar",
 ];
 
 const goodLists = [
-    "Handpicked ingredients",
-    "Signature techniques",
-    "Bartending artistry in action",
-    "Freshly muddled flavors",
+    "Ingredientes de Proximidad",
+    "Recetas de Autor",
+    "Servicio Personalizado",
+    "Sabores Mediterráneos",
 ];
 
 const storeInfo = {
-    heading: "Where to Find Us",
-    address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+    heading: "Encuéntranos en",
+    address: "Paseo Marítimo de Benalmádena (frente al mar)",
     contact: {
-        phone: "(555) 987-6543",
-        email: "hello@jsmcocktail.com",
+        phone: "123 45 67 89",
+        email: "info@tentenlounge.com",
     },
 };
 
 const openingHours = [
-    { day: "Mon–Thu", time: "11:00am – 12am" },
-    { day: "Fri", time: "11:00am – 2am" },
-    { day: "Sat", time: "9:00am – 2am" },
-    { day: "Sun", time: "9:00am – 1am" },
+    { day: "Lun–Jue", time: "12:00pm – 12am" },
+    { day: "Vier", time: "12:00pm – 2am" },
+    { day: "Sab", time: "11:00am – 2am" },
+    { day: "Dom", time: "11:00am – 1am" },
 ];
 
 const socials = [
@@ -137,35 +141,35 @@ const socials = [
 const allCocktails = [
     {
         id: 1,
-        name: "Classic Mojito",
+        name: "Ten Ten Sunset",
         image: "/images/drink1.png",
-        title: "Simple Ingredients, Bold Flavor",
+        title: "El Sabor del Atardecer en tu Copa",
         description:
-            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+            "Nuestro cóctel estrella. Una mezcla secreta de licores premium con toques de naranja y granada que te transportará a una puesta de sol en Benalmádena.",
     },
     {
         id: 2,
-        name: "Raspberry Mojito",
+        name: "Benalmádena Breeze",
         image: "/images/drink2.png",
-        title: "A Zesty Classic That Never Fails",
+        title: "La Brisa del Mar Hecha Cóctel",
         description:
-            "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+            "Una combinación refrescante de ginebra, pepino, menta y un toque de lima. Ideal para los días más calurosos en nuestra terraza frente al mar.",
     },
     {
         id: 3,
-        name: "Violet Breeze",
+        name: "Mediterranean Mule",
         image: "/images/drink3.png",
-        title: "Simple Ingredients, Bold Flavor",
+        title: "Un Clásico con Toque Mediterráneo",
         description:
-            "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+            "Nuestra versión del clásico Moscow Mule, con un toque de romero y jengibre fresco que le da un sabor único y aromático. ",
     },
     {
         id: 4,
-        name: "Curacao Mojito",
+        name: "Costa del Sol",
         image: "/images/drink4.png",
-        title: "Crafted With Care, Poured With Love",
+        title: "El Sabor de la Costa en una Jarra",
         description:
-            "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+            "Una deliciosa sangría de vino blanco con frutas de temporada y un toque espumoso. Perfecta para compartir con amigos mientras disfrutas de las vistas.",
     },
 ];
 

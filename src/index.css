@@ -66,7 +66,7 @@ body {
     @apply fixed z-50 w-full;
 
     div {
-      @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
+      @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 px-10 container mx-auto;
     }
 
     p {
@@ -102,7 +102,7 @@ body {
     }
 
     .body {
-      @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
+      @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-10;
 
       .content {
         @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
@@ -146,7 +146,7 @@ body {
     }
 
     .list {
-      @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-5;
+      @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 px-10;
 
       .popular {
         @apply space-y-8 w-full md:w-fit;
@@ -183,7 +183,7 @@ body {
   }
 
   #about {
-    @apply min-h-screen py-28 2xl:px-0 px-5 container mx-auto;
+    @apply min-h-screen py-28 px-10 container mx-auto;
 
     .content {
       @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
@@ -239,7 +239,7 @@ body {
   }
 
   #art {
-    @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient;
+    @apply flex-center flex-col min-h-dvh p-10 mt-20 relative radial-gradient;
 
     h2 {
       @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-8;
@@ -273,7 +273,7 @@ body {
   }
 
   #menu {
-    @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
+    @apply relative w-full md:mt-40 mt-0 px-10 py-20 radial-gradient;
 
     #m-left-leaf {
       @apply object-contain absolute -bottom-20 left-0 md:w-fit w-1/3;
@@ -341,7 +341,7 @@ body {
   }
 
   #contact {
-    @apply relative md:mt-20 mt-0 px-4 text-center w-full overflow-hidden radial-gradient;
+    @apply relative md:mt-20 mt-0 px-10 text-center w-full overflow-hidden radial-gradient;
 
     #f-left-leaf {
       @apply absolute bottom-0 left-0 pointer-events-none lg:w-fit w-1/3;
@@ -369,6 +369,24 @@ body {
 
     .drink-img {
       @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
+    }
+  }
+
+  .booking-form {
+    @apply grid md:grid-cols-2 grid-cols-1 gap-8 max-w-4xl mx-auto;
+
+    input {
+      @apply bg-transparent border-b border-white/40 focus:border-yellow transition-colors duration-300 py-3 text-lg outline-none;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator,
+    input[type="time"]::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+      cursor: pointer;
+    }
+
+    button {
+      @apply bg-yellow text-black font-bold text-lg py-3 rounded-full hover:bg-white transition-colors duration-300 md:col-span-2;
     }
   }
 }

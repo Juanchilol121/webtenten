@@ -29,7 +29,7 @@ const Art = () => {
     return (
         <div id='art'>
             <div className='container mx-auto h-full pt-20'>
-                <h2 className='will-fade'>The ART</h2>
+                <h2 className='will-fade'>Galería</h2>
 
                 <div className='content'>
                     <ul className='space-y-4 will-fade'>
@@ -56,10 +56,10 @@ const Art = () => {
                 </div>
 
                 <div className='masked-container'>
-                    <h2 className='will-fade'>Sip-Worthy Perfection</h2>
+                    <h2 className='will-fade'>Momentos Inolvidables</h2>
                     <div id='masked-content'>
-                        <h3>Made with Craft, Poured with Passion</h3>
-                        <p>This isn't just a drink. It's a carefully crafted moment made just for you.</p>
+                        <h3>Vistas, Sabores y Momentos</h3>
+                        <p>Cada foto captura la esencia de Ten Ten: un ambiente único, cócteles de autor y la mejor compañía.</p>
                     </div>
                 </div>
             </div>
